@@ -5,21 +5,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPOM {
+public class HomePOM {
 	private WebDriver driver; 
 	
-	public LoginPOM(WebDriver driver) {
+	public HomePOM(WebDriver driver) {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="email")
-	private WebElement userName; 
+	@FindBy(className="fa-user")
+	private WebElement user_icon; 
 	
-	@FindBy(id="pass")
+	/*@FindBy(id="password")
 	private WebElement password;
 	
-	@FindBy(id="send2")
+	@FindBy(id="formLogin_submitAuth")
 	private WebElement loginBtn; 
 	
 	public void sendUserName(String userName) {
@@ -30,9 +30,9 @@ public class LoginPOM {
 	public void sendPassword(String password) {
 		this.password.clear(); 
 		this.password.sendKeys(password); 
-	}
+	}*/
 	
-	public void clickLoginBtn() {
-		this.loginBtn.click(); 
+	public void clickUserIcon() {
+		this.user_icon.click(); 
 	}
 }
