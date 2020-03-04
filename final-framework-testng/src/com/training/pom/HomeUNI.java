@@ -18,14 +18,21 @@ public class HomeUNI {
 	private WebElement user_icon; 
 	
 	@FindBy(linkText="Register")
-	private WebElement Register; 
+	private WebElement register;
+	
+	@FindBy(linkText="Login")
+	private WebElement login;
 	
 	public void clickUserIcon() {
 		this.user_icon.click(); 
 		
 	}
 	public void clickRegister() {
-		this.Register.click(); 
+		this.register.click(); 
 		
 	}
+	public void clickLogin() {
+		this.login.click(); 
+	}
+	
 }
