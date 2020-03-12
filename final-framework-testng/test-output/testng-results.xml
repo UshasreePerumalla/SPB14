@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="16743" started-at="2020-03-04T14:08:19Z" finished-at="2020-03-04T14:08:35Z">
+  <suite name="Sample test Suite" duration-ms="34360" started-at="2020-03-12T06:36:39Z" finished-at="2020-03-12T06:37:13Z">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="16743" started-at="2020-03-04T14:08:19Z" finished-at="2020-03-04T14:08:35Z">
-      <class name="com.training.sanity.tests.ChangePwdTests006">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ChangePwdTests006@51565ec2]" name="setUpBeforeClass" is-config="true" duration-ms="11" started-at="2020-03-04T19:38:19Z" finished-at="2020-03-04T19:38:19Z">
+    <test name="Sample test" duration-ms="34360" started-at="2020-03-12T06:36:39Z" finished-at="2020-03-12T06:37:13Z">
+      <class name="com.training.sanity.tests.AdminAddPrdctTests035">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.AdminAddPrdctTests035@51565ec2]" name="setUpBeforeClass" is-config="true" duration-ms="26" started-at="2020-03-12T12:06:39Z" finished-at="2020-03-12T12:06:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.ChangePwdTests006@51565ec2]" name="setUp" is-config="true" duration-ms="10531" started-at="2020-03-04T19:38:19Z" finished-at="2020-03-04T19:38:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdminAddPrdctTests035@51565ec2]" name="setUp" is-config="true" duration-ms="14375" started-at="2020-03-12T12:06:39Z" finished-at="2020-03-12T12:06:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.ChangePwdTests006@51565ec2]" name="validLoginTest" duration-ms="6176" started-at="2020-03-04T19:38:29Z" finished-at="2020-03-04T19:38:35Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.AdminAddPrdctTests035@51565ec2]" name="validLoginTest" duration-ms="19935" started-at="2020-03-12T12:06:53Z" finished-at="2020-03-12T12:07:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-      </class> <!-- com.training.sanity.tests.ChangePwdTests006 -->
+      </class> <!-- com.training.sanity.tests.AdminAddPrdctTests035 -->
     </test> <!-- Sample test -->
   </suite> <!-- Sample test Suite -->
 </testng-results>
