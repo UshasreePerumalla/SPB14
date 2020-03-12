@@ -86,7 +86,7 @@ public class AdminAddPrdctTests035 {
 		dshbrd.save();
 		String msg=driver.findElement(By.className("alert-success")).getText();
 		System.out.println(msg);
-		//Assert.assertEquals(msg, "Success: You have modified products!");
+		Assert.assertTrue(msg.contains("Success: You have modified products!"));
 		screenShot.captureScreenShot("prdctMdfcnSuccess");
 			}
 }
