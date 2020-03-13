@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Sample test Suite]">
   <test name="Sample test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.GuestUserTest034">
+      <class name="com.training.sanity.tests.RtrnOrdrPrdctTests036">
         <methods>
+          <include name="setUp"/>
           <include name="validLoginTest"/>
           <include name="setUpBeforeClass"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.GuestUserTest034 -->
+      </class> <!-- com.training.sanity.tests.RtrnOrdrPrdctTests036 -->
     </classes>
   </test> <!-- Sample test(failed) -->
 </suite> <!-- Failed suite [Sample test Suite] -->
