@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="22960" started-at="2020-03-13T07:38:03Z" finished-at="2020-03-13T07:38:26Z">
+  <suite name="Sample test Suite" duration-ms="29652" started-at="2020-03-18T11:30:49Z" finished-at="2020-03-18T11:31:18Z">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="22960" started-at="2020-03-13T07:38:03Z" finished-at="2020-03-13T07:38:26Z">
-      <class name="com.training.sanity.tests.RtrnOrdrPrdctTests036">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RtrnOrdrPrdctTests036@51565ec2]" name="setUpBeforeClass" is-config="true" duration-ms="17" started-at="2020-03-13T13:08:03Z" finished-at="2020-03-13T13:08:03Z">
+    <test name="Sample test" duration-ms="29652" started-at="2020-03-18T11:30:49Z" finished-at="2020-03-18T11:31:18Z">
+      <class name="com.training.sanity.tests.AdminAddPrdctNSrchViewTests065">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.AdminAddPrdctNSrchViewTests065@51565ec2]" name="setUpBeforeClass" is-config="true" duration-ms="9" started-at="2020-03-18T17:00:49Z" finished-at="2020-03-18T17:00:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RtrnOrdrPrdctTests036@51565ec2]" name="setUp" is-config="true" duration-ms="10584" started-at="2020-03-13T13:08:03Z" finished-at="2020-03-13T13:08:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdminAddPrdctNSrchViewTests065@51565ec2]" name="setUp" is-config="true" duration-ms="9244" started-at="2020-03-18T17:00:49Z" finished-at="2020-03-18T17:00:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.RtrnOrdrPrdctTests036@51565ec2]" name="validLoginTest" duration-ms="12330" started-at="2020-03-13T13:08:14Z" finished-at="2020-03-13T13:08:26Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.AdminAddPrdctNSrchViewTests065@51565ec2]" name="validLoginTest" duration-ms="20379" started-at="2020-03-18T17:00:58Z" finished-at="2020-03-18T17:01:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-      </class> <!-- com.training.sanity.tests.RtrnOrdrPrdctTests036 -->
+      </class> <!-- com.training.sanity.tests.AdminAddPrdctNSrchViewTests065 -->
     </test> <!-- Sample test -->
   </suite> <!-- Sample test Suite -->
 </testng-results>

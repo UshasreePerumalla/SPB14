@@ -1,5 +1,8 @@
 package com.training.pom;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,7 +20,25 @@ public class AdminDshbrdPOMUNI {
 
 	@FindBy(className = "fa-tags")
 	private WebElement ctlg; 
+	
+	@FindBy(linkText = "Categories")
+	private WebElement ctgry_lnk; 
+	
+	@FindBy(className="fa-plus")
+	private WebElement ctgry_plus_icon; 
 
+    @FindBy(xpath="//input[@placeholder='Category Name']")
+    private WebElement ctgryname;
+    
+ @FindBy(className="note-editable")
+ private WebElement ctgrdesc;
+    
+ //@FindBy(xpath="//div[@contenteditable='true']")
+ //private WebElement ctgrdesc;
+ 
+ @FindBy(id="input-meta-description1")
+ private WebElement ctgrmetatagdesc;
+ 
 	@FindBy(linkText="Products")
 	private WebElement products;
 
@@ -26,6 +47,7 @@ public class AdminDshbrdPOMUNI {
 	
 	@FindBy(id ="input-name1")
      private WebElement prdname;
+	
 	@FindBy(id="input-meta-title1")
 	private WebElement inptmetatag;
 
@@ -79,11 +101,30 @@ public class AdminDshbrdPOMUNI {
 	@FindBy(xpath="//td[5]//div[1]//span[1]")
 	private WebElement strtdt_icon;
 
-	@FindBy(xpath=("//i[@class='fa fa-calendar'][3]"))
+	@FindBy(xpath="(//i[@class='fa fa-calendar'])[3]")
 	private WebElement endt_icon;
 	
 	public void catalog() {
 		this.ctlg.click();
+	}
+	
+	public void categories() {
+		this.ctgry_lnk.click();
+	}
+	public void addNewCtgry() {
+		this.ctgry_plus_icon.click(); 
+	}
+	public void ctgryName(String name) {
+		this.ctgryname.clear();
+		this.ctgryname.sendKeys(name);
+	}
+	public void ctgryDscrptn(String desc) {
+		this.ctgrdesc.clear();
+		this.ctgrdesc.sendKeys(desc);
+	}
+	public void ctgryMetaTagDscrptn(String tagdesc) {
+		this.ctgrmetatagdesc.clear();
+		this.ctgrmetatagdesc.sendKeys(tagdesc);
 	}
 	
 	public void Products() {
@@ -132,8 +173,14 @@ public class AdminDshbrdPOMUNI {
 		this.dsprc.sendKeys("200");
 		this.strtdt_icon.click();
 		this.strtdt_icon.click();
-		//this.endt_icon.click();
-	}
+		this.endt_icon.click();
+	/*	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/mm/dd");
+		LocalDateTime now = LocalDateTime.now();
+		String today = dtf.format(now);
+		System.out.println(today);
+		String date[] =today.split("/");
+		int nextday=Integer.parseInt(date[2]+1);*/
+		}
 	public void rwrdPointsTab(String pnts) {
 		this.rwrdpnts.click();
 		this.points.clear();

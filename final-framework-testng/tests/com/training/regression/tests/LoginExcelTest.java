@@ -72,4 +72,13 @@ public class LoginExcelTest {
 		loginpg.clickLoginBtn();
 		screenShot.captureScreenShot(fieldsName);
 	}
+	/*@Test(dataProvider = "CtgrysData", dataProviderClass = LoginDataProviders.class)
+	public void loginExcelTest(String fieldsName,String ctgryName, String dscrptn,String megaTagTitle,String megaTagDscrptn) {
+		homepg.clickUserIcon();
+		homepg.clickLogin();
+		loginpg.sendUserName(userName);
+		loginpg.sendPassword(password);
+		loginpg.clickLoginBtn();
+		screenShot.captureScreenShot(fieldsName);
+}*/
 }

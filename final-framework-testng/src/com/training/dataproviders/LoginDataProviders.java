@@ -46,4 +46,9 @@ public class LoginDataProviders {
 		String fileName ="C:\\Users\\UshasreePerumallaPer\\Desktop\\Reskill Automation course\\TD1.xlsx"; 
 		return new ApachePOIExcelRead().getExcelContent(fileName); 
 	}
+	@DataProvider(name = "CtgrysData")
+	public Object[][] CtgrysData(){
+		String fileName ="C:\\Users\\UshasreePerumallaPer\\Desktop\\Reskill Automation course\\TD64.xlsx"; 
+		return new ApachePOIExcelRead().getExcelContent(fileName); 
+	}
 }

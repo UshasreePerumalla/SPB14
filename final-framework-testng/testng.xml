@@ -4,9 +4,9 @@
 <suite name = "Sample test Suite">
    <test name = "Sample test">
       <classes>
-       <!--    <class name = "com.training.sanity.tests.AdminAddPrdctTests035"/>-->
-         <class name = "com.training.sanity.tests.RtrnOrdrPrdctTests036"/>
-       <!--  <class name = "com.training.regression.tests.AdminAddPrdctTests035"/>-->
+        <class name = "com.training.sanity.tests.AdminAddPrdctNSrchViewTests065"/>
+       <!--    <class name = "com.training.sanity.tests.RtrnOrdrPrdctTests036"/>-->
+       <!-- <class name = "com.training.regression.tests.AdminAddCtgrysExcelTests064"/> --> 
       </classes>
    </test>
 </suite>	
