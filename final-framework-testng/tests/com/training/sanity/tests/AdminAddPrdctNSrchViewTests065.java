@@ -3,6 +3,7 @@ package com.training.sanity.tests;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +33,7 @@ public class AdminAddPrdctNSrchViewTests065 {
 	//private HomeUNI homepg;
 	private static Properties properties;
 	private ScreenShot screenShot;
+	private Object object;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
@@ -69,11 +71,11 @@ public class AdminAddPrdctNSrchViewTests065 {
 		dshbrd.Products();
 	//	screenShot.captureScreenShot("Product list");
 		dshbrd.addNewPrd();
-		dshbrd.prdName("Blazer Boys(8-9)");
-		dshbrd.metaTag("Blazer fo Boys");
+		dshbrd.prdName("Blazer Boys(3-4)");
+		dshbrd.metaTag("Blazer for Boys");
 	//	screenShot.captureScreenShot("Add Productpage");
 		dshbrd.dataTab();
-		dshbrd.enterModel("BLG-121");
+		dshbrd.enterModel("BLG-1111");
 		dshbrd.enterPrice("2000");
 		dshbrd.enterQnty("300");
 	//	screenShot.captureScreenShot("Datatab");
@@ -88,11 +90,31 @@ public class AdminAddPrdctNSrchViewTests065 {
 		System.out.println(msg);
 		Assert.assertTrue(msg.contains("Success: You have modified products!"));
 		screenShot.captureScreenShot("AddPrdctSuccess");
-	//	driver.findElement(By.className("fa-home")).click();
-	//	driver.findElement(By.linkText("Uniform Store")).click();
-	//	driver.switchTo().window(msg);
-		driver.findElement(By.className("fa-sign-out")).click();
-		admlog.sendUserName("admin");
+		String parentHandle = driver.getWindowHandle(); 
+		System.out.println(parentHandle);
+		driver.findElement(By.className("fa-home")).click();
+		driver.findElement(By.linkText("Uniform Store")).click();
+		Set<String> winids= driver.getWindowHandles();
+		System.out.println(winids);
+			for(String usrwinid:winids) {
+					driver.switchTo().window(usrwinid);
+					System.out.println(driver.getTitle());
+					System.out.println(driver.getCurrentUrl());
+					if(driver.getTitle().equals("Uniform Store"))
+					{
+					//	driver.manage().deleteAllCookies();
+						break;
+						//System.out.println("userpage is launched");
+						//driver.findElement(By.linkText("REGULAR T-SHIRTS (YELLOW)")).isDisplayed();
+						//screenShot.captureScreenShot("PrdAddedIsDsplyd");
+					}
+					System.out.println("userpage is launched");
+					driver.findElement(By.linkText("REGULAR T-SHIRTS (YELLOW)")).isDisplayed();
+					screenShot.captureScreenShot("PrdAddedIsDsplyd");
+		}
+		
+		//driver.findElement(By.className("fa-sign-out")).click();
+	/*	admlog.sendUserName("admin");
 		admlog.sendPassword("admin@123");
 		admlog.clickLoginBtn();
 		dshbrd.catalog();
@@ -100,6 +122,7 @@ public class AdminAddPrdctNSrchViewTests065 {
 		dshbrd.Products();
 		driver.findElement(By.id("input-name")).sendKeys("Blazer Boys(8-9)");
 		driver.findElement(By.className("fa-search")).click();
-		screenShot.captureScreenShot("AddedPrdctIsDsplyd");
+		screenShot.captureScreenShot("AddedPrdctIsDsplyd");*/
+		
 					}
 }
